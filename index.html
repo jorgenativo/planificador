@@ -11,10 +11,62 @@
 <body>
  <h1>Control de lista de tareas básicas</h1>
  <hr>
- <div variable="./snippets/contenedor.html"></div>
+ 
 
+
+ <h3>PROYECTO SECRETO</h3>
+    <table>
+        <tr>
+            <th>Día</th>
+            <th>Tareas</th>
+            <th>Horas</Th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" onclick="document.getElementById('tarea1').innerHTML = 'Evaluar alcance del proyecto'"/> 
+             <label for="cbox1">Lunes</label></td>
+            <td><p id="tarea1">........</p></td>
+            
+            <td>60min
+        <tr>
+         <tr>
+            <td><input type="checkbox" onclick="document.getElementById('tarea2').innerHTML = 'Diseñar plantilla'"/>
+             <label for="cbox2">Martes</label></td>
+            <td><p id="tarea2">........</p></td>
+           
+            <td>120min
+        </tr>
+        <tr>
+            <td><input type="checkbox" onclick="document.getElementById('tarea3').innerHTML = 'Revisar y corregir'"/>
+             <label for="cbox3">Mièrcoles</label></td>
+            <td><p id="tarea3">........</p></td>
+            <td>150min
+        </tr>
+        <tr>
+         <td><input type="checkbox" onclick="document.getElementById('tarea4').innerHTML = 'Testear funciones'"/>
+          <label for="cbox4">Jueves</label></td>
+         <td><p id="tarea4">........</p></td>
+         <td>180min
+     </tr>
+     <tr>
+      <td><input type="checkbox" onclick="document.getElementById('tarea5').innerHTML = 'Presentar proyecto'"/>
+       <label for="cbox5">Viernes</label></td>
+      <td><p id="tarea5">........</p></td>
+      <td>60min
+  </tr>
+    </table>
+    
+
+    
+<button class="editar">editar</button>
+<button class="eliminar"onclick="eliminar('Eliminar')">Eliminar</button>
  <footer>
-  <div variable="./snippets/footer.html"></div>
-</footer>
+  <address>
+      <b>1313 Mockingbird Lane, Hollywood</b>
+  </address> 
+  
+  <div style="color: white;"></i>jorgenativo@linkedin.com</div>
+ 
+ </footer>
 </body>
 </html>
+<input type="text" id="display" value="">
