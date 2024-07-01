@@ -1,4 +1,4 @@
 function eliminar(){
- sessionStorage.setItem("resultado","");
- document.getElementById("display").value="";
+ sessionStorage.setItem("");
+ document.getElementById("tarea5").value="";
  }
