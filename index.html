@@ -15,6 +15,7 @@
 
 
  <h3>PROYECTO SECRETO</h3>
+ <h4> Tareas pendientes en rojo / tareas realizadas en azul</h4>
     <table>
         <tr>
             <th>Día</th>
@@ -22,35 +23,33 @@
             <th>Horas</Th>
         </tr>
         <tr>
-            <td><input type="checkbox" onclick="document.getElementById('tarea1').innerHTML = 'Evaluar alcance del proyecto'"/> 
+            <td><input  type="checkbox" onclick="document.getElementById('tarea1').innerHTML = 'Evaluar alcance del proyecto'"/> 
              <label for="cbox1">Lunes</label></td>
-            <td><p id="tarea1">........</p></td>
-            
+            <td class="rojo" p id="tarea1">........</p></td>
             <td>60min
         <tr>
          <tr>
             <td><input type="checkbox" onclick="document.getElementById('tarea2').innerHTML = 'Diseñar plantilla'"/>
              <label for="cbox2">Martes</label></td>
-            <td><p id="tarea2">........</p></td>
-           
+            <td class="rojo"><p id="tarea2">........</p></td>
             <td>120min
         </tr>
         <tr>
             <td><input type="checkbox" onclick="document.getElementById('tarea3').innerHTML = 'Revisar y corregir'"/>
              <label for="cbox3">Mièrcoles</label></td>
-            <td><p id="tarea3">........</p></td>
+            <td class="rojo"><p id="tarea3">........</p></td>
             <td>150min
         </tr>
         <tr>
          <td><input type="checkbox" onclick="document.getElementById('tarea4').innerHTML = 'Testear funciones'"/>
           <label for="cbox4">Jueves</label></td>
-         <td><p id="tarea4">........</p></td>
+         <td class="rojo" ><p  id="tarea4">........</p></td>
          <td>180min
      </tr>
      <tr>
       <td><input type="checkbox" onclick="document.getElementById('tarea5').innerHTML = 'Presentar proyecto'"/>
        <label for="cbox5">Viernes</label></td>
-      <td><p id="tarea5">........</p></td>
+      <td class="rojo"><p class="azul" id="tarea5">........</p></td>
       <td>60min
   </tr>
     </table>
@@ -58,8 +57,9 @@
 
     
 <button class="editar">editar</button>
-<button class="eliminar" onclick="document.getElementById('tarea5').innerHTML = '......borrado.'">eliminar</button>
- <footer>
+<button class="eliminar" onclick="document.getElementById('tarea1','tarea2','tarea3','tarea4','tarea5').innerHTML = '......borrado.'">eliminar</button>
+ <!-- Mi footer corporativo -->
+<footer>
   <address>
       <b>1313 Mockingbird Lane, Hollywood</b>
   </address> 
@@ -69,4 +69,3 @@
  </footer>
 </body>
 </html>
-<input type="text" id="display" value="" class="pantalla">

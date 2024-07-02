@@ -19,9 +19,13 @@ th {
  
 }
 
-td {
- color: rgb(114, 114, 211);
+.rojo{
+ color:red
 }
+.azul{
+ color: blue;
+}
+
 .editar{
  background-color: darkturquoise;
 }
