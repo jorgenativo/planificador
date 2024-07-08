@@ -12,60 +12,65 @@
  <h1>Control de lista de tareas básicas</h1>
  <hr>
  
-
-
  <h3>PROYECTO SECRETO</h3>
- <h4> Tareas pendientes en rojo / tareas realizadas en azul</h4>
+ <h4 style="color:red"> Tareas pendientes en rojo</h4>
+ <h4 style="color:blue">Tareas realizadas en azul</h4>
     <table>
         <tr>
             <th>Día</th>
-            <th>Tareas</th>
+            <th id="tareas">Tareas</th>
             <th>Horas</Th>
         </tr>
+        <!-- checkbox por día de la semana -->
         <tr>
             <td><input  type="checkbox" onclick="document.getElementById('tarea1').innerHTML = 'Evaluar alcance del proyecto'"/> 
-             <label for="cbox1">Lunes</label></td>
-            <td class="rojo" p id="tarea1">........</p></td>
+        <!-- En rojo indica el día de la semana que no se ha relizado la actividad     -->
+                <label class="rojo" for="cbox1">Lunes</label></td>
+        <!--al hacer click aparece la tarea realizada en azul  -->       
+            <td class="azul" p id="tarea1">........</p></td>
             <td>60min
+        <!--el botón eliminar borra la actividad realizada  -->
+                <button class="eliminar" onclick="document.getElementById('tarea1').innerHTML = '...eliminado'">eliminar</button>
         <tr>
-         <tr>
+           <!--La secuencia se repite igual por cada día de la semana  -->
+        <tr>
             <td><input type="checkbox" onclick="document.getElementById('tarea2').innerHTML = 'Diseñar plantilla'"/>
-             <label for="cbox2">Martes</label></td>
-            <td class="rojo"><p id="tarea2">........</p></td>
+            <label class="rojo" for="cbox2">Martes</label></td>
+            <td class="azul"><p id="tarea2">........</p></td>
             <td>120min
+                <button class="eliminar" onclick="document.getElementById('tarea2').innerHTML = '...eliminado'">eliminar</button>
         </tr>
         <tr>
             <td><input type="checkbox" onclick="document.getElementById('tarea3').innerHTML = 'Revisar y corregir'"/>
-             <label for="cbox3">Mièrcoles</label></td>
-            <td class="rojo"><p id="tarea3">........</p></td>
+            <label class="rojo" for="cbox3">Mièrcoles</label></td>
+            <td class="azul"><p id="tarea3">........</p></td>
             <td>150min
+                <button class="eliminar" onclick="document.getElementById('tarea3').innerHTML = '...eliminado'">eliminar</button>
         </tr>
         <tr>
-         <td><input type="checkbox" onclick="document.getElementById('tarea4').innerHTML = 'Testear funciones'"/>
-          <label for="cbox4">Jueves</label></td>
-         <td class="rojo" ><p  id="tarea4">........</p></td>
-         <td>180min
-     </tr>
-     <tr>
-      <td><input type="checkbox" onclick="document.getElementById('tarea5').innerHTML = 'Presentar proyecto'"/>
-       <label for="cbox5">Viernes</label></td>
-      <td class="rojo"><p class="azul" id="tarea5">........</p></td>
-      <td>60min
-  </tr>
+            <td><input type="checkbox" onclick="document.getElementById('tarea4').innerHTML = 'Testear funciones'"/>
+            <label class="rojo" for="cbox4">Jueves</label></td>
+            <td class="azul" ><p  id="tarea4">........</p></td>
+            <td>180min
+                <button class="eliminar" onclick="document.getElementById('tarea4').innerHTML = '...eliminado'">eliminar</button>
+        </tr>
+        <tr>
+            <td><input type="checkbox" onclick="document.getElementById('tarea5').innerHTML = 'Presentar proyecto'"/>
+            <label class="rojo"  for="cbox5">Viernes</label></td>
+            <td class="azul"><p id="tarea5">........</p></td>
+            <td>60min
+                <button class="eliminar" onclick="document.getElementById('tarea5').innerHTML = '...eliminado'">eliminar</button>
+        </tr>
     </table>
-    
+  <!--Este botón pretende corregir la actividad a realizar  -->
+<button class="editar" onclick="document.getElementById('tarea1').innerHTML = '......'">Editar</button>
 
-    
-<button class="editar">editar</button>
-<button class="eliminar" onclick="document.getElementById('tarea1','tarea2','tarea3','tarea4','tarea5').innerHTML = '......borrado.'">eliminar</button>
- <!-- Mi footer corporativo -->
+<!-- Mi footer corporativo -->
 <footer>
   <address>
       <b>1313 Mockingbird Lane, Hollywood</b>
   </address> 
-  
   <div style="color: white;"></i>jorgenativo@linkedin.com</div>
- 
- </footer>
+  </footer>
 </body>
 </html>
