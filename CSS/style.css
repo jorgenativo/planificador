@@ -18,17 +18,19 @@ th {
  
  
 }
-
+/* se refiere a los checkbox tareas pendientes */
 .rojo{
  color:red
 }
+/* se refiere a las tareas realizadas */
 .azul{
  color: blue;
 }
-
+/* es el botón que permite colocar la tarea en posición edición */
 .editar{
  background-color: darkturquoise;
 }
+/* elimina las tareas realizadas */
 .eliminar{
  background-color: red;
 }
