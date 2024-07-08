@@ -5,35 +5,38 @@ body{
 h1{
  text-align: center;
 }
+
 table {
  border: 5px solid rgb(180, 92, 82);
  width: 500px;
  height: 500px;
-
 }
 
 th {
  border: 3px solid rgb(161, 143, 43);
  color: rgb(111, 43, 175);
- 
- 
 }
+
 /* se refiere a los checkbox tareas pendientes */
 .rojo{
  color:red
 }
+
 /* se refiere a las tareas realizadas */
 .azul{
  color: blue;
 }
+
 /* es el botón que permite colocar la tarea en posición edición */
 .editar{
  background-color: darkturquoise;
 }
+
 /* elimina las tareas realizadas */
 .eliminar{
  background-color: red;
 }
+
 footer {
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  background-color: olive;
